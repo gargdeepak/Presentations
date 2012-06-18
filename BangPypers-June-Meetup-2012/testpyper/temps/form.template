@@ -1,0 +1,16 @@
+
+<html><body><h3>My Form </h3>
+        <form method="post" action="/sign">
+            Enter Name: <input type="text" name="myname"/> <br/>
+            <input type="submit" value="Please submit" />
+            </form>
+        <br />
+        <ol>
+    {% for item in items %}
+        <li> {{ item  }} </li>
+        {% endfor %}
+        </ol>
+     </br>
+     <image src="mystatic/anshul_at_work.jpg" alt="anshul" height="400" width="600"/>   
+
+        </body> </html>

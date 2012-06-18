@@ -1,0 +1,18 @@
+application: testpyper
+version: 2 
+runtime: python27
+api_version: 1
+threadsafe: no
+
+libraries: 
+- name: jinja2
+  version: latest
+
+handlers:
+- url: /mystatic
+  static_dir: mystatic
+
+- url: /.*
+  script: mywsgi.mywebapp
+  
+
